@@ -5,5 +5,5 @@ setup(
     version='1.0.0',
     packages=['nspace', 'nspace.two'],
     namespace_packages=['nspace'],
-    install_requires=['nspace-three', 'setuptools==32.3.0', 'pip==9.0.1']
+    install_requires=['nspace-three']
 )
