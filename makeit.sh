@@ -2,8 +2,6 @@
 
 rm -R env | echo -n
 
-python3 -m virtualenv env
+pip install -t env ./nspace-three ./nspace-two
 
-env/bin/pip install ./nspace-three ./nspace-two
-
-PYTHONPATH=nspace-two env/bin/python -c 'from nspace.two.stuff import *'
+PYTHONPATH=nspace-two:env python3 -c 'from nspace.two.stuff import *'
